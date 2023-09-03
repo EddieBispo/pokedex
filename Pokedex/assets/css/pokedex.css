@@ -1,0 +1,302 @@
+    .pokemons {
+    /*Display stuff*/
+        display: grid;
+        grid-template-columns: 1fr ;
+    /*Box model stuff*/
+        margin: 0;
+        padding: 0;
+    /*Miscellaneous*/
+        list-style: none;
+        cursor: context-menu;
+    }
+
+    .normal {
+        background-color: #a6a877;
+    }
+    
+    .grass {
+        background-color: #77c850;
+    }
+    
+    .fire {
+        background-color: #ee7f30;
+    }
+    
+    .water {
+        background-color: #678fee;
+    }
+    
+    .electric {
+        background-color: #f7cf2e;
+    }
+    
+    .ice {
+        background-color: #98d5d7;
+    }
+    
+    .ground {
+        background-color: #dfbf69;
+    }
+    
+    .flying {
+        background-color: #a98ff0;
+    }
+    
+    .poison {
+        background-color: #a040a0;
+    }
+    
+    .fighting {
+        background-color: #bf3029;
+    }
+    
+    .psychic {
+        background-color: #f65687;
+    }
+    
+    .dark {
+        background-color: #725847;
+    }
+    
+    .rock {
+        background-color: #b8a137;
+    }
+    
+    .bug {
+        background-color: #a8b720;
+    }
+    
+    .ghost {
+        background-color: #6e5896;
+    }
+    
+    .steel {
+        background-color: #b9b7cf;
+    }
+    
+    .dragon {
+        background-color: #6f38f6;
+    }
+    
+    .fairy {
+        background-color: #f9aec7;
+    }
+    
+    .pokemon {
+    /*Display stuff*/
+        display: flex;
+        flex-direction: column;
+    /*Box model stuff*/
+        margin: 0.5rem;
+        padding: 1.1rem 1rem;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.651);
+        transition: 0.2s;
+    }
+
+    .pokemon:hover {
+        transform: scale(1.02);
+    }
+
+    
+    .pokemon .number {
+        /*Display stuff*/
+        align-self: self-end;
+        /*Box model stuff*/
+        padding: 0.25rem 0.5rem;
+        border-radius: 10px;
+        background-color: #00000075;
+        /*Typography stuff*/
+        font-size: 0.625rem;
+        font-size: 0.625rem;
+        text-align: right;
+        text-align: center;
+        color: #000000;
+        /*Manipulations stuff*/
+        opacity: 0.3;
+        /*Miscellaneous*/
+        box-shadow: inset 0 3px 2px rgb(0, 0, 0);
+    }
+    
+    .pokemon .name {
+/*Box model stuff*/
+        margin-bottom: 0.25rem;
+/*Typography stuff*/
+        font-weight: bold;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.493);
+        text-transform: capitalize;
+        color: #ffffff;
+    }
+    
+    .pokemon .detail {
+/*Display stuff*/
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .pokemon .detail .types {
+/*Box model stuff*/
+        margin: 0;
+        padding: 0;
+/*Miscellaneous*/
+        list-style: none;
+    }
+    
+    .pokemon .detail .types .type {
+        /*Box model stuff*/
+        margin: 0.25rem 0;
+        padding: 0.25rem 0.5rem;
+        border-radius: 1rem;
+        /*Typography stuff*/
+        font-size: 0.625rem;
+        text-align: center;
+        text-transform: capitalize;
+        color: #ffffff;
+        /*Manipulations stuff*/
+        filter: brightness(1.2);
+        /*Miscellaneous*/
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.212);
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.767);
+    }
+
+    .containerImgPokemon{
+/*Box model stuff*/
+        width: 100%;
+        max-width: 120px;
+        margin-left: 10px;
+        background-image: url(/imagens/pokebola.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 100px;
+    }
+    
+    .pokemon .detail img {
+/*Display stuff*/
+        align-self: self-end;
+/*Box model stuff*/
+        width: 100px;
+        max-width: 100%;
+        height: 100px;
+/*Manipulations stuff*/
+        filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.61));
+    }
+
+    .pagination {
+/*Display stuff*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+/*Box model stuff*/
+        width: 100%;
+        margin-top: -40px;
+    }
+
+    #pokebola{
+/*Display stuff*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+/*Box model stuff*/
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        background: linear-gradient(#ff0000 45%, #000000 45%, #000000 55%, #ffffff 55%);
+/*Manipulations stuff*/
+        transition: 0.2s;
+/*Miscellaneous*/
+        box-shadow: 2px 5px 10px #000000;
+    }
+
+    #pokebola:hover {
+        transform: scale(1.1);
+    }
+
+    #btnPokebola{
+/*Display stuff*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+/*Box model stuff*/
+        width: 40px;
+        height: 40px;
+        border: solid 5px #000000;
+        border-radius: 40px;
+        background-color: #ffffff;
+/*Miscellaneous*/
+        box-shadow: 0px 2px 5px #000000;
+    }
+
+    button {
+/*Box model stuff*/
+        width: 20px;
+        height: 20px;
+        border: none;
+        border-radius: 20px;
+/*Miscellaneous*/
+        box-shadow: 1px 2px 3px #000000;
+        cursor: pointer;
+    }
+
+    button:active{
+        box-shadow: inset 1px 2px 3px #000000;
+    }
+
+
+
+    @media screen and (min-width: 380px) {
+      
+        body{
+            padding: 0;
+        }
+
+
+        .pokemons {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .containerImgPokemon {
+            background-size: 70px;
+        }
+
+        .pokemon .detail img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+        
+    @media screen and (min-width: 576px) {
+        .pokemons {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        #tela {
+            padding: 50px;
+        }
+
+    }
+    
+    @media screen and (min-width: 992px) {
+        .pokemons {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .pokemon .name {
+            font-size: 20px;
+        }
+
+        #tela {
+            padding: 80px;
+        }
+        
+
+        .pokemon .number {
+            font-size: 14px;
+        }
+        
+        .pokemon .detail .types .type {
+            font-size: 16px;
+        }
+
+    }
